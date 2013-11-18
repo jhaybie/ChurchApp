@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ChurchPictures" representedClassName="ChurchPictures" syncable="YES">
+        <attribute name="captions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="links" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Events" representedClassName="Events" syncable="YES">
+        <attribute name="eventDays" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTimes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MassTimes" representedClassName="MassTimes" syncable="YES">
+        <attribute name="days" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="times" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OtherServices" representedClassName="OtherServices" syncable="YES">
+        <attribute name="serviceDays" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceTimes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ParishInfo" representedClassName="ParishInfo" syncable="YES">
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sermons" representedClassName="Sermons" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="synopsis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SundayBulletins" representedClassName="SundayBulletins" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="links" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ParishInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="MassTimes" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Events" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ChurchPictures" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Sermons" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="OtherServices" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SundayBulletins" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
