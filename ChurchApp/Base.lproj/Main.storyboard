@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="280" id="5Nc-5a-JJW"/>
                                     <constraint firstAttribute="height" constant="301" id="RWY-Rr-9IS"/>
                                 </constraints>
-                                <mutableString key="text">Mission Statement  St. Peter Parish is a multi-cultural Roman Catholic community of faith.  We are a people of God dedicated to living the Gospel message and celebrating our community in liturgy.  We come together of pray, to support and to live the Gospel message daily by loving God and by loving and serving our neighbors in humility.  We are called to stewardship by sharing our time, our talent, and our treasure for the sake of the Lord Jesus.</mutableString>
+                                <string key="text">Mission Statement  St. Peter Parish is a multi-cultural Roman Catholic community of faith.  We are a people of God dedicated to living the Gospel message and celebrating our community in liturgy.  We come together of pray, to support and to live the Gospel message daily by loving God and by loving and serving our neighbors in humility.  We are called to stewardship by sharing our time, our talent, and our treasure for the sake of the Lord Jesus.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -95,7 +95,7 @@
                                 <rect key="frame" x="20" y="102" width="280" height="379"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">SUNDAY MASS SCHEDULE
+                                <string key="text">SUNDAY MASS SCHEDULE
 Saturday Evening:
 5:00PM (CHAPEL)
 Sunday Morning:
@@ -115,7 +115,7 @@ THE ROSARY
 Monday through Saturday
 at 7:45 AM
 Sunday
-after 9:00 AM Mass</mutableString>
+after 9:00 AM Mass</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
