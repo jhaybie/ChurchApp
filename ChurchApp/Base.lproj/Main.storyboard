@@ -16,46 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="80640171.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-cU-ApL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="80640171.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-cU-ApL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLG-mt-nBD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLG-mt-nBD">
                                 <rect key="frame" x="20" y="205" width="280" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="5Nc-5a-JJW"/>
-                                    <constraint firstAttribute="height" constant="301" id="RWY-Rr-9IS"/>
-                                </constraints>
                                 <string key="text">Mission Statement  St. Peter Parish is a multi-cultural Roman Catholic community of faith.  We are a people of God dedicated to living the Gospel message and celebrating our community in liturgy.  We come together of pray, to support and to live the Gospel message daily by loving God and by loving and serving our neighbors in humility.  We are called to stewardship by sharing our time, our talent, and our treasure for the sake of the Lord Jesus.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Welcome to  Saint Peter Parish!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to  Saint Peter Parish!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
                                 <rect key="frame" x="20" y="30" width="280" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="geb-g8-FWX"/>
+                                    <constraint firstAttribute="height" constant="42" id="Vfm-3y-RWb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IZ2-Bk-nt7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ2-Bk-nt7">
                                 <rect key="frame" x="20" y="80" width="280" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="kOg-UA-p3H"/>
+                                </constraints>
                                 <string key="text">Saint Peter Parish is located in the center of downtown Skokie.  The parish was established in 1868 and the present Church was built in 1894 at the intersection of Niles Center Road and Lincoln Avenue.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tso-AK-B9U">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tso-AK-B9U">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="19g-gi-Caa"/>
+                            <constraint firstItem="IZ2-Bk-nt7" firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" id="4Yx-N8-Ue1"/>
+                            <constraint firstItem="dP9-jv-PMU" firstAttribute="top" secondItem="tso-AK-B9U" secondAttribute="bottom" id="9js-rg-5ar"/>
+                            <constraint firstItem="tso-AK-B9U" firstAttribute="top" secondItem="9CT-cU-ApL" secondAttribute="top" id="Jdj-gG-9MK"/>
+                            <constraint firstItem="IZ2-Bk-nt7" firstAttribute="leading" secondItem="XLG-mt-nBD" secondAttribute="leading" id="LOq-iU-OaZ"/>
+                            <constraint firstItem="ZO0-D2-GfG" firstAttribute="top" secondItem="XLG-mt-nBD" secondAttribute="bottom" constant="73" id="VlH-6T-2OA"/>
+                            <constraint firstItem="IZ2-Bk-nt7" firstAttribute="leading" secondItem="Zhg-ve-WU7" secondAttribute="leading" id="Vuu-m4-hhw"/>
+                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="centerX" secondItem="tso-AK-B9U" secondAttribute="centerX" id="Xf0-vN-1xf"/>
+                            <constraint firstItem="XLG-mt-nBD" firstAttribute="top" secondItem="IZ2-Bk-nt7" secondAttribute="bottom" constant="8" symbolic="YES" id="czY-UV-1kg"/>
+                            <constraint firstItem="9CT-cU-ApL" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="d9b-hT-obZ"/>
+                            <constraint firstItem="XLG-mt-nBD" firstAttribute="trailing" secondItem="IZ2-Bk-nt7" secondAttribute="trailing" id="dOD-zY-dDE"/>
+                            <constraint firstItem="ZO0-D2-GfG" firstAttribute="top" secondItem="9CT-cU-ApL" secondAttribute="bottom" id="eAD-AG-JnH"/>
+                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="k9V-tL-ZzL"/>
+                            <constraint firstItem="IZ2-Bk-nt7" firstAttribute="top" secondItem="Zhg-ve-WU7" secondAttribute="bottom" constant="8" symbolic="YES" id="kkb-He-Idf"/>
+                            <constraint firstItem="tso-AK-B9U" firstAttribute="trailing" secondItem="9CT-cU-ApL" secondAttribute="trailing" id="rGP-90-qJ0"/>
+                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="top" secondItem="dP9-jv-PMU" secondAttribute="bottom" constant="10" id="rPs-0X-h8q"/>
+                            <constraint firstItem="tso-AK-B9U" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" id="trV-wy-blH"/>
+                            <constraint firstItem="9CT-cU-ApL" firstAttribute="leading" secondItem="tso-AK-B9U" secondAttribute="leading" id="woI-n5-Pij"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="u1e-5L-l1D"/>
                 </viewController>
