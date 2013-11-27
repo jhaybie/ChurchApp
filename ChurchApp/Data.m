@@ -9,6 +9,8 @@
 #import "Data.h"
 #import "AppDelegate.h"
 #import "ParishInfo.h"
+#import "LastUpdated.h"
+#import "ParishInfo.h"
 
 @implementation Data
 static Data* sMyData;
@@ -124,6 +126,67 @@ static Data* sMyData;
     return matchedObjects;
 }
 
+-(void)parseLoadInfo
+{
+    
+    NSFetchRequest *searchRequest = [[NSFetchRequest alloc] init];
+    [searchRequest setEntity:[NSEntityDescription entityForName:@"LastUpdated" inManagedObjectContext:managedObjectContext]];
+    
+    NSArray *availArray = [managedObjectContext executeFetchRequest:searchRequest error:nil];
+    
+    NSDate *lastUpdate;
+    if ([availArray count] <= 0)
+    {
+        LastUpdated *updatedEntity = (LastUpdated *) [NSEntityDescription insertNewObjectForEntityForName:@"LastUpdated" inManagedObjectContext:[self managedObjectContext]];
+        lastUpdate = updatedEntity.lastUpdatePerformed;
+        [(AppDelegate*)[[UIApplication sharedApplication] delegate] saveContext];
+    }
+    else
+    {
+        NSArray *searchedArray = [managedObjectContext executeFetchRequest:searchRequest error:nil];
+        LastUpdated *updatedEntity = [searchedArray objectAtIndex:0];
+        lastUpdate = updatedEntity.lastUpdatePerformed;
+    }
+
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"INSERT LAST OVERALL UPDATE TIME CLASS HERE"];
+    
+    [query whereKey:@"updatedAt" greaterThan:lastUpdate];  //comparison not working properly, must FIX!!
+    
+    [query orderByAscending:@"createdAt"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error)
+        {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %lu information.", (unsigned long)objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects)
+            {
+                [object objectForKey:@"ClassNameHere"];
+                
+                ParishInfo *parish = (ParishInfo *)[NSEntityDescription insertNewObjectForEntityForName:@"ParishInfo" inManagedObjectContext:managedObjectContext];
+                
+                //converting string into date
+                NSString *dateString = object[@"LAST UPDATE CLASS NAME HERE"];
+                NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+                [dateFormat setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+                NSDate *date = [dateFormat dateFromString:[dateString stringByReplacingOccurrencesOfString:@" +0000" withString:@""]];
+                                
+                parish.history = object[@"PARISH HISTORY CLASS NAME HERE"];
+                
+                [(AppDelegate*)[[UIApplication sharedApplication] delegate] saveContext];
+                
+                NSLog(@"%@", object.objectId);
+            }
+        } else
+        {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
 
 
 

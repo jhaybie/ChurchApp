@@ -16,8 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    NSLog(@"%@", [[UIDevice currentDevice] identifierForVendor]);
+    [Parse setApplicationId:@"LwePimRNe7VUpiISlLxokP3gtjeBMuTdczT13gfz"
+                  clientKey:@"nvbbsD7q6syPUblvQcXnN7xzsgMB4djD9Qeu4sBI"];
+
     
     return YES;
 }

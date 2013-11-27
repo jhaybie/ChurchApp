@@ -11,6 +11,9 @@
         <attribute name="eventTimes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventTitle" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="LastUpdated" representedClassName="LastUpdated" syncable="YES">
+        <attribute name="lastUpdatePerformed" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
     <entity name="MassTimes" representedClassName="MassTimes" syncable="YES">
         <attribute name="days" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="times" optional="YES" attributeType="String" syncable="YES"/>
@@ -33,12 +36,13 @@
         <attribute name="links" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ParishInfo" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MassTimes" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Events" positionX="0" positionY="0" width="0" height="0"/>
         <element name="ChurchPictures" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Sermons" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Events" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="MassTimes" positionX="0" positionY="0" width="0" height="0"/>
         <element name="OtherServices" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ParishInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Sermons" positionX="0" positionY="0" width="0" height="0"/>
         <element name="SundayBulletins" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="LastUpdated" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
