@@ -191,7 +191,7 @@ after 9:00 AM Mass</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="cdc-HU-nag" kind="push" id="yCD-4U-1l6"/>
+                                            <segue destination="cdc-HU-nag" kind="push" identifier="EventDetail" id="yCD-4U-1l6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
