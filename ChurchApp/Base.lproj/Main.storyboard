@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -195,20 +195,27 @@ after 9:00 AM Mass</string>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QUy-BD-bpt" id="0ZS-um-Qro"/>
+                                    <outlet property="delegate" destination="QUy-BD-bpt" id="EAR-DU-GcE"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="SeU-k4-fb8"/>
+                    <connections>
+                        <outlet property="eventTableView" destination="6BE-fR-m8R" id="yUZ-BJ-psr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1179" y="498"/>
         </scene>
-        <!--View Controller - Event Details-->
+        <!--Second Detail View Controller - Event Details-->
         <scene sceneID="3bS-lw-Dng">
             <objects>
-                <viewController id="cdc-HU-nag" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventDetail" id="cdc-HU-nag" customClass="Second_DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pv5-az-ysP"/>
                         <viewControllerLayoutGuide type="bottom" id="Ouw-Io-Hb2"/>
