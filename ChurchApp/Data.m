@@ -237,7 +237,7 @@ static Data* sMyData;
 
     PFQuery *query = [PFQuery queryWithClassName:@"Events"];
     
-    [query whereKey:@"updatedAt" greaterThan:lastUpdate];  //comparison not working properly, must FIX!!
+    //[query whereKey:@"updatedAt" greaterThan:lastUpdate];  //comparison not working properly, must FIX!!
     
     [query orderByAscending:@"createdAt"];
     
@@ -249,9 +249,17 @@ static Data* sMyData;
             // Do something with the found objects
             for (PFObject *object in objects)
             {
-                [object objectForKey:@"ClassNameHere"];
+                Events *newEvent = [self fetchEvents];
                 
-                ParishInfo *parish = (ParishInfo *)[NSEntityDescription insertNewObjectForEntityForName:@"ParishInfo" inManagedObjectContext:managedObjectContext];
+                newEvent.eventDescription = [object objectForKey:@"eventDescription"];
+                newEvent.eventTitle = [object objectForKey:@"eventTitle"];
+                newEvent.eventTimes = [object objectForKey:@"eventTimes"];
+                newEvent.eventDays = [object objectForKey:@"eventDays"];
+                
+                NSLog(@"%@", [object objectForKey:@"eventDescription"]);
+                
+                NSDate *dateToCompare = object.updatedAt;
+                NSLog(@"%@", dateToCompare);
                 
                 //converting string into date
                 NSString *dateString = object[@"LAST UPDATE CLASS NAME HERE"];
@@ -259,7 +267,7 @@ static Data* sMyData;
                 [dateFormat setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
                 NSDate *date = [dateFormat dateFromString:[dateString stringByReplacingOccurrencesOfString:@" +0000" withString:@""]];
                 
-                parish.history = object[@"PARISH HISTORY CLASS NAME HERE"];
+                //parish.history = object[@"PARISH HISTORY CLASS NAME HERE"];
                 
                 [(AppDelegate*)[[UIApplication sharedApplication] delegate] saveContext];
                 
