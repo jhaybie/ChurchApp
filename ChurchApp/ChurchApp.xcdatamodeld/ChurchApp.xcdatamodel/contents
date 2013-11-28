@@ -25,6 +25,7 @@
     </entity>
     <entity name="ParishInfo" representedClassName="ParishInfo" syncable="YES">
         <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="missionStatement" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Sermons" representedClassName="Sermons" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
