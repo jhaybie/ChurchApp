@@ -65,7 +65,6 @@ NSMutableArray *testArray;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Second_DetailViewController *sdvc = [self.storyboard instantiateViewControllerWithIdentifier:@"EventDetail"];
     [self.navigationController pushViewController:sdvc animated:YES];
-    // [self pushViewController:sdvc animated:YES completion:nil];
 }
 
 @end
