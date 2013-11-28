@@ -46,6 +46,7 @@
 		E4165CF0183A9A4000F7BC5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4165CEF183A9A4000F7BC5D /* MapKit.framework */; };
 		E4165CF3183A9BE000F7BC5D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4165CF2183A9BE000F7BC5D /* ThirdViewController.m */; };
 		E4165CF6183A9D9200F7BC5D /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4165CF5183A9D9200F7BC5D /* FourthViewController.m */; };
+		E43F28D91846BA0F00B16323 /* Second-DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F28D81846BA0F00B16323 /* Second-DetailViewController.m */; };
 		E47D63F1183AB76C00A65AAA /* 80640171.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47D63F0183AB76C00A65AAA /* 80640171.jpg */; };
 		E47D63F3183AC1A700A65AAA /* bong-hits-4-jesus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47D63F2183AC1A700A65AAA /* bong-hits-4-jesus.jpg */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,8 @@
 		E4165CF2183A9BE000F7BC5D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		E4165CF4183A9D9200F7BC5D /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		E4165CF5183A9D9200F7BC5D /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		E43F28D71846BA0F00B16323 /* Second-DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Second-DetailViewController.h"; sourceTree = "<group>"; };
+		E43F28D81846BA0F00B16323 /* Second-DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Second-DetailViewController.m"; sourceTree = "<group>"; };
 		E47D63F0183AB76C00A65AAA /* 80640171.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 80640171.jpg; sourceTree = "<group>"; };
 		E47D63F2183AC1A700A65AAA /* bong-hits-4-jesus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bong-hits-4-jesus.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,6 +236,8 @@
 				E4165CC6183A9A1C00F7BC5D /* AppDelegate.h */,
 				E4165CC7183A9A1C00F7BC5D /* AppDelegate.m */,
 				E4165CC9183A9A1C00F7BC5D /* Main.storyboard */,
+				E43F28D71846BA0F00B16323 /* Second-DetailViewController.h */,
+				E43F28D81846BA0F00B16323 /* Second-DetailViewController.m */,
 				E4165CCC183A9A1C00F7BC5D /* FirstViewController.h */,
 				E4165CCD183A9A1C00F7BC5D /* FirstViewController.m */,
 				E4165CCF183A9A1C00F7BC5D /* SecondViewController.h */,
@@ -382,6 +387,8 @@
 				37B60B1F1846C2B20030AB1F /* LastUpdated.m in Sources */,
 				37B60B131846C2B10030AB1F /* SundayBulletins.m in Sources */,
 				E4165CF3183A9BE000F7BC5D /* ThirdViewController.m in Sources */,
+				3717E49C183AC0A9007F9F09 /* ParishInfo.m in Sources */,
+				E43F28D91846BA0F00B16323 /* Second-DetailViewController.m in Sources */,
 				E4165CC8183A9A1C00F7BC5D /* AppDelegate.m in Sources */,
 				37B60B161846C2B10030AB1F /* ChurchPictures.m in Sources */,
 				37B60B221846C2B20030AB1F /* Events.m in Sources */,
