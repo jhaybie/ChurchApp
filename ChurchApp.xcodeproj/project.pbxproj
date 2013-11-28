@@ -10,13 +10,6 @@
 		3717E48C183AAE1B007F9F09 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E48B183AAE1B007F9F09 /* Data.m */; };
 		3717E48E183AB2F2007F9F09 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3717E48D183AB2F2007F9F09 /* CoreData.framework */; };
 		3717E491183AB32F007F9F09 /* ChurchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3717E48F183AB32F007F9F09 /* ChurchApp.xcdatamodeld */; };
-		3717E49C183AC0A9007F9F09 /* ParishInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E49B183AC0A9007F9F09 /* ParishInfo.m */; };
-		3717E49F183AC0AA007F9F09 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E49E183AC0AA007F9F09 /* Events.m */; };
-		3717E4A2183AC0AA007F9F09 /* OtherServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E4A1183AC0AA007F9F09 /* OtherServices.m */; };
-		3717E4A5183AC0AA007F9F09 /* ChurchPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E4A4183AC0AA007F9F09 /* ChurchPictures.m */; };
-		3717E4A8183AC0AA007F9F09 /* Sermons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E4A7183AC0AA007F9F09 /* Sermons.m */; };
-		3717E4AB183AC0AA007F9F09 /* MassTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E4AA183AC0AA007F9F09 /* MassTimes.m */; };
-		3717E4AE183AC0AA007F9F09 /* SundayBulletins.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717E4AD183AC0AA007F9F09 /* SundayBulletins.m */; };
 		37B60AF8184678D40030AB1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60AF7184678D40030AB1F /* Parse.framework */; };
 		37B60AFA1846792E0030AB1F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60AF91846792E0030AB1F /* AudioToolbox.framework */; };
 		37B60AFC1846793D0030AB1F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60AFB1846793D0030AB1F /* CFNetwork.framework */; };
@@ -27,7 +20,14 @@
 		37B60B06184679870030AB1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60B05184679870030AB1F /* Security.framework */; };
 		37B60B081846798D0030AB1F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60B071846798D0030AB1F /* StoreKit.framework */; };
 		37B60B0A184679990030AB1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B60B09184679990030AB1F /* SystemConfiguration.framework */; };
-		37B60B0D1846802F0030AB1F /* LastUpdated.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B0C1846802F0030AB1F /* LastUpdated.m */; };
+		37B60B131846C2B10030AB1F /* SundayBulletins.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B121846C2B10030AB1F /* SundayBulletins.m */; };
+		37B60B161846C2B10030AB1F /* ChurchPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B151846C2B10030AB1F /* ChurchPictures.m */; };
+		37B60B191846C2B20030AB1F /* MassTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B181846C2B20030AB1F /* MassTimes.m */; };
+		37B60B1C1846C2B20030AB1F /* OtherServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B1B1846C2B20030AB1F /* OtherServices.m */; };
+		37B60B1F1846C2B20030AB1F /* LastUpdated.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B1E1846C2B20030AB1F /* LastUpdated.m */; };
+		37B60B221846C2B20030AB1F /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B211846C2B20030AB1F /* Events.m */; };
+		37B60B251846C2B20030AB1F /* ParishInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B241846C2B20030AB1F /* ParishInfo.m */; };
+		37B60B281846C2B20030AB1F /* Sermons.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B60B271846C2B20030AB1F /* Sermons.m */; };
 		E4165CB8183A9A1C00F7BC5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4165CB7183A9A1C00F7BC5D /* Foundation.framework */; };
 		E4165CBA183A9A1C00F7BC5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4165CB9183A9A1C00F7BC5D /* CoreGraphics.framework */; };
 		E4165CBC183A9A1C00F7BC5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4165CBB183A9A1C00F7BC5D /* UIKit.framework */; };
@@ -66,20 +66,6 @@
 		3717E48B183AAE1B007F9F09 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		3717E48D183AB2F2007F9F09 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3717E490183AB32F007F9F09 /* ChurchApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChurchApp.xcdatamodel; sourceTree = "<group>"; };
-		3717E49A183AC0A9007F9F09 /* ParishInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParishInfo.h; sourceTree = "<group>"; };
-		3717E49B183AC0A9007F9F09 /* ParishInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParishInfo.m; sourceTree = "<group>"; };
-		3717E49D183AC0AA007F9F09 /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
-		3717E49E183AC0AA007F9F09 /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
-		3717E4A0183AC0AA007F9F09 /* OtherServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherServices.h; sourceTree = "<group>"; };
-		3717E4A1183AC0AA007F9F09 /* OtherServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherServices.m; sourceTree = "<group>"; };
-		3717E4A3183AC0AA007F9F09 /* ChurchPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchPictures.h; sourceTree = "<group>"; };
-		3717E4A4183AC0AA007F9F09 /* ChurchPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchPictures.m; sourceTree = "<group>"; };
-		3717E4A6183AC0AA007F9F09 /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
-		3717E4A7183AC0AA007F9F09 /* Sermons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sermons.m; sourceTree = "<group>"; };
-		3717E4A9183AC0AA007F9F09 /* MassTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MassTimes.h; sourceTree = "<group>"; };
-		3717E4AA183AC0AA007F9F09 /* MassTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MassTimes.m; sourceTree = "<group>"; };
-		3717E4AC183AC0AA007F9F09 /* SundayBulletins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SundayBulletins.h; sourceTree = "<group>"; };
-		3717E4AD183AC0AA007F9F09 /* SundayBulletins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SundayBulletins.m; sourceTree = "<group>"; };
 		37B60AF7184678D40030AB1F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		37B60AF91846792E0030AB1F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		37B60AFB1846793D0030AB1F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -90,8 +76,22 @@
 		37B60B05184679870030AB1F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		37B60B071846798D0030AB1F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		37B60B09184679990030AB1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		37B60B0B1846802F0030AB1F /* LastUpdated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastUpdated.h; sourceTree = "<group>"; };
-		37B60B0C1846802F0030AB1F /* LastUpdated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastUpdated.m; sourceTree = "<group>"; };
+		37B60B111846C2B10030AB1F /* SundayBulletins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SundayBulletins.h; sourceTree = "<group>"; };
+		37B60B121846C2B10030AB1F /* SundayBulletins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SundayBulletins.m; sourceTree = "<group>"; };
+		37B60B141846C2B10030AB1F /* ChurchPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchPictures.h; sourceTree = "<group>"; };
+		37B60B151846C2B10030AB1F /* ChurchPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchPictures.m; sourceTree = "<group>"; };
+		37B60B171846C2B20030AB1F /* MassTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MassTimes.h; sourceTree = "<group>"; };
+		37B60B181846C2B20030AB1F /* MassTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MassTimes.m; sourceTree = "<group>"; };
+		37B60B1A1846C2B20030AB1F /* OtherServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherServices.h; sourceTree = "<group>"; };
+		37B60B1B1846C2B20030AB1F /* OtherServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherServices.m; sourceTree = "<group>"; };
+		37B60B1D1846C2B20030AB1F /* LastUpdated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastUpdated.h; sourceTree = "<group>"; };
+		37B60B1E1846C2B20030AB1F /* LastUpdated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastUpdated.m; sourceTree = "<group>"; };
+		37B60B201846C2B20030AB1F /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		37B60B211846C2B20030AB1F /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		37B60B231846C2B20030AB1F /* ParishInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParishInfo.h; sourceTree = "<group>"; };
+		37B60B241846C2B20030AB1F /* ParishInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParishInfo.m; sourceTree = "<group>"; };
+		37B60B261846C2B20030AB1F /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
+		37B60B271846C2B20030AB1F /* Sermons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sermons.m; sourceTree = "<group>"; };
 		E4165CB4183A9A1C00F7BC5D /* ChurchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4165CB7183A9A1C00F7BC5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4165CB9183A9A1C00F7BC5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -166,22 +166,22 @@
 				3717E48A183AAE1B007F9F09 /* Data.h */,
 				3717E48B183AAE1B007F9F09 /* Data.m */,
 				3717E48F183AB32F007F9F09 /* ChurchApp.xcdatamodeld */,
-				37B60B0B1846802F0030AB1F /* LastUpdated.h */,
-				37B60B0C1846802F0030AB1F /* LastUpdated.m */,
-				3717E4AC183AC0AA007F9F09 /* SundayBulletins.h */,
-				3717E4AD183AC0AA007F9F09 /* SundayBulletins.m */,
-				3717E4A9183AC0AA007F9F09 /* MassTimes.h */,
-				3717E4AA183AC0AA007F9F09 /* MassTimes.m */,
-				3717E4A6183AC0AA007F9F09 /* Sermons.h */,
-				3717E4A7183AC0AA007F9F09 /* Sermons.m */,
-				3717E4A3183AC0AA007F9F09 /* ChurchPictures.h */,
-				3717E4A4183AC0AA007F9F09 /* ChurchPictures.m */,
-				3717E4A0183AC0AA007F9F09 /* OtherServices.h */,
-				3717E4A1183AC0AA007F9F09 /* OtherServices.m */,
-				3717E49D183AC0AA007F9F09 /* Events.h */,
-				3717E49E183AC0AA007F9F09 /* Events.m */,
-				3717E49A183AC0A9007F9F09 /* ParishInfo.h */,
-				3717E49B183AC0A9007F9F09 /* ParishInfo.m */,
+				37B60B261846C2B20030AB1F /* Sermons.h */,
+				37B60B271846C2B20030AB1F /* Sermons.m */,
+				37B60B231846C2B20030AB1F /* ParishInfo.h */,
+				37B60B241846C2B20030AB1F /* ParishInfo.m */,
+				37B60B201846C2B20030AB1F /* Events.h */,
+				37B60B211846C2B20030AB1F /* Events.m */,
+				37B60B1D1846C2B20030AB1F /* LastUpdated.h */,
+				37B60B1E1846C2B20030AB1F /* LastUpdated.m */,
+				37B60B1A1846C2B20030AB1F /* OtherServices.h */,
+				37B60B1B1846C2B20030AB1F /* OtherServices.m */,
+				37B60B171846C2B20030AB1F /* MassTimes.h */,
+				37B60B181846C2B20030AB1F /* MassTimes.m */,
+				37B60B141846C2B10030AB1F /* ChurchPictures.h */,
+				37B60B151846C2B10030AB1F /* ChurchPictures.m */,
+				37B60B111846C2B10030AB1F /* SundayBulletins.h */,
+				37B60B121846C2B10030AB1F /* SundayBulletins.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -381,23 +381,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B60B1C1846C2B20030AB1F /* OtherServices.m in Sources */,
 				E4165CF6183A9D9200F7BC5D /* FourthViewController.m in Sources */,
 				E4165CD1183A9A1C00F7BC5D /* SecondViewController.m in Sources */,
-				3717E49F183AC0AA007F9F09 /* Events.m in Sources */,
-				37B60B0D1846802F0030AB1F /* LastUpdated.m in Sources */,
+				37B60B1F1846C2B20030AB1F /* LastUpdated.m in Sources */,
+				37B60B131846C2B10030AB1F /* SundayBulletins.m in Sources */,
 				E4165CF3183A9BE000F7BC5D /* ThirdViewController.m in Sources */,
 				3717E49C183AC0A9007F9F09 /* ParishInfo.m in Sources */,
 				E43F28D91846BA0F00B16323 /* Second-DetailViewController.m in Sources */,
 				E4165CC8183A9A1C00F7BC5D /* AppDelegate.m in Sources */,
+				37B60B161846C2B10030AB1F /* ChurchPictures.m in Sources */,
+				37B60B221846C2B20030AB1F /* Events.m in Sources */,
 				3717E491183AB32F007F9F09 /* ChurchApp.xcdatamodeld in Sources */,
-				3717E4AE183AC0AA007F9F09 /* SundayBulletins.m in Sources */,
-				3717E4A2183AC0AA007F9F09 /* OtherServices.m in Sources */,
+				37B60B251846C2B20030AB1F /* ParishInfo.m in Sources */,
+				37B60B281846C2B20030AB1F /* Sermons.m in Sources */,
 				3717E48C183AAE1B007F9F09 /* Data.m in Sources */,
+				37B60B191846C2B20030AB1F /* MassTimes.m in Sources */,
 				E4165CCE183A9A1C00F7BC5D /* FirstViewController.m in Sources */,
 				E4165CC4183A9A1C00F7BC5D /* main.m in Sources */,
-				3717E4A8183AC0AA007F9F09 /* Sermons.m in Sources */,
-				3717E4AB183AC0AA007F9F09 /* MassTimes.m in Sources */,
-				3717E4A5183AC0AA007F9F09 /* ChurchPictures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  Events.h
 //  ChurchApp
 //
-//  Created by Greg Tropino on 11/18/13.
+//  Created by Greg Tropino on 11/27/13.
 //  Copyright (c) 2013 Jhaybie. All rights reserved.
 //
 
@@ -12,9 +12,9 @@
 
 @interface Events : NSManagedObject
 
-@property (nonatomic, retain) NSString * eventDescription;
-@property (nonatomic, retain) NSString * eventTitle;
 @property (nonatomic, retain) NSString * eventDays;
+@property (nonatomic, retain) NSString * eventDescription;
 @property (nonatomic, retain) NSString * eventTimes;
+@property (nonatomic, retain) NSString * eventTitle;
 
 @end

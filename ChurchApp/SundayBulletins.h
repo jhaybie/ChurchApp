@@ -2,7 +2,7 @@
 //  SundayBulletins.h
 //  ChurchApp
 //
-//  Created by Greg Tropino on 11/18/13.
+//  Created by Greg Tropino on 11/27/13.
 //  Copyright (c) 2013 Jhaybie. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @interface SundayBulletins : NSManagedObject
 
-@property (nonatomic, retain) NSString * links;
 @property (nonatomic, retain) NSString * date;
+@property (nonatomic, retain) NSString * links;
 
 @end

@@ -2,7 +2,7 @@
 //  Sermons.h
 //  ChurchApp
 //
-//  Created by Greg Tropino on 11/18/13.
+//  Created by Greg Tropino on 11/27/13.
 //  Copyright (c) 2013 Jhaybie. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 @interface Sermons : NSManagedObject
 
 @property (nonatomic, retain) NSString * date;
-@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * synopsis;
+@property (nonatomic, retain) NSString * title;
 
 @end

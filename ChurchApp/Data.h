@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+-(void)parseLoadInfo;
++(Data *)myData;
+
 @end
